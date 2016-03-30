@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Weather Wake Up</title>
+
+      <script  type="text/javascript">
+      function changeImg(imgNumber) {
+      var myImages = ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg"]; 
+      var imgShown = document.body.style.backgroundImage;
+      var newImgNumber =Math.floor(Math.random()*myImages.length);
+      document.body.style.backgroundImage = 'url('+myImages[newImgNumber]+')';
+    }
+    window.onload=changeImg;
+    </script>
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <link href="cover.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            
+            <div style="margin: 15px 0px 0px; display: inline-block; text-align: center; width: 344px;">
+              <noscript>
+                <div style="display: inline-block; padding: 2px 4px; margin: 0px 0px 5px; border: 1px solid rgb(204, 204, 204); text-align: center; background-color: transparent; text-decoration: none; font-size: 13px; color: rgb(255, 255, 255);"> 
+                </div>
+              </noscript>
+              <script type="text/javascript" src="http://localtimes.info/clock.php?&cp1_Hex=ffffff&cp2_Hex=FFFFFF&cp3_Hex=000000&fwdt=344&ham=0&hbg=1&hfg=1&sid=1&mon=0&wek=0&wkf=0&sep=0&widget_number=1021">
+              </script>
+            </div>
+          
+          <div class="inner cover">
+            <h1 class="cover-heading">Wellington, NZ</h1>
+            <p class="lead">The days weather displayed easily so the user 
+            </br>can plan their day from their activity to their outfit. 
+            </br>Music playing will be fitting to the weather outside.</p>
+
+              <script>
+                function play(){
+                var audio = document.getElementById("audio");
+                audio.play();
+                 }
+              </script>
+            <img src="sun.png" value="PLAY"  onclick="play()">
+            <audio id="audio" src="sun.mp3" ></audio>
+
+
+              <script>
+                function play(){
+                var audio = document.getElementById("audio");
+                audio.play();
+                 }
+              </script>
+            <img src="overcast.png" value="PLAY"  onclick="play()">
+            <audio id="audio" src="overcast.mp3" ></audio>
+
+              <script>
+                function play(){
+                var audio = document.getElementById("audio");
+                audio.play();
+                 }
+              </script>
+            <img src="showers.png" value="PLAY"  onclick="play()">
+            <audio id="audio" src="showers.mp3" ></audio>
+
+          </div>
+
+          <div class="page">
+          <p><a href="#media-popup" data-media="https://www.youtube.com/embed/auLZOXRTPms">click me</a></p>
+
+          <div class="popup" id="media-popup">
+          <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+    <script src="bootstrap.min.js"></script>
+  </body>
+</html>
